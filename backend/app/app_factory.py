@@ -12,7 +12,6 @@ def get_application() -> FastAPI:
 
     @app.get("/info")
     async def get_backend():
-        1 / 0
         return {"backend": socket.gethostname()}
 
     return app
